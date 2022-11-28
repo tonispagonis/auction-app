@@ -1,4 +1,4 @@
-.env details to test:
+.env file details to test app:
 
 
 PORT = 5000
