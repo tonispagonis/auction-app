@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 14rem 0.5rem;
+}
+
+.navbar {
+  margin: 50px 0 50px;
+}
+.navbar-link {
+  padding: 3px 25px 3px;
+  margin: 0 30px 0;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px grey;
+  color: rgb(97, 95, 95);
+}
+
+.logout-button {
+  float: right;
+}
+
+.login-form {
+  padding: 50px 150px 50px;
+  border-radius: 60px;
+  box-shadow: 1px 1px 20px grey;
+}
+
+.login-form h3 {
+  padding-bottom: 20px;
+}
+
+.home-line {
+  margin-top: 120px;
+}
+
+.bang-name {
+  font-size: 100px;
+  padding: 20px 0 35px;
+}
+
+.charity-line {
+  padding-top: 210px;
+}
+
+.no-offers-line {
+  margin-top: 250px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Assistant, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: wheat;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+    padding: 0.3em 0.8em;
+    margin: 0.3em 0.8em;;
+    border-radius: 4px;
+    border: 1px solid #777;
+    display: block;
+    max-width: 300px;
+  }
+  
+  textarea {
+    min-height: 5rem;
+    min-width: 500px;
+    resize: vertical;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 0.3em 0.8em;
+    margin: 15px;
+    border-radius: 4px;
+    border: 1px solid #777;
+    cursor: pointer;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .card {
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgb(180, 190, 194);
+    border: 1px solid rgb(191, 180, 180);
+    border-radius: 5px;
+    background-color: snow;
+  }
+  
+  /*  helpers */
+  
+  .flex {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .max-w-300 {
+    max-width: 300px;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .alert {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    padding: 1re,;
+    margin: auto;
+    max-width: 500px;
+    transform: translate(-50%);
+    background-color: rgb(210, 235, 171);
+    box-shadow: 5px 5px 10px rgb(28, 77, 28);
+    border-radius: 10px;
+  }
+
+  .auction-card{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+  }
+  
+  .image-container {
+    width: 90%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+  }
+
+  .closeBtn {
+    font-size: 20px;
+    margin: 15px;
+    
+  }
+
+  .userbox{
+    width: 250px;
+    margin: 20px;
+  
+  }
+  .selected {
+    background-color: lightcyan
+  }
+
+  .messagebox{
+    width: 500px;
+    height: 120px;
+    border: 1px black solid;
+  }
+
+  .auction-container{
+    position: absolute;
+    height: 300vh;
+    width: 100vw;
+    left: 0px;
+    top: -300px;
+  }
+
+  .auction {
+    width: 100px;
+    height: 200px;
+  }
+
+  .bid-field {
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+  
+  .j-center {
+    justify-content: center;
+  }
+  .a-center {
+    align-items: center;
+  }
+  
+  .j-end {
+    justify-content: end;
+  }
+  
+  .space-btw {
+    justify-content: space-between;
+  }
+  
+  .f-column {
+    flex-direction: column;
+  }
+  
+  .f-wrap {
+    flex-wrap: wrap;
+  }
+  .s-evenly{
+    justify-content: space-evenly;
+  }
+  
+  .grow1 {
+    flex: 1;
+  }
+  
+  .grow2 {
+    flex: 2;
+  }
+  
+  .grow3 {
+    flex: 3;
+  }
+  
+  .grow4 {
+    flex: 4;
+  }
+  
+  .o-auto {
+    overflow: auto;
+  }
+  
+  .p50 {
+    padding: 50px;
+     
+  }
+  
+  .m10{
+    margin: 10px
+  }
+  
+  .p5 {
+    padding: 5px;
+  }
+  
+  
+  .pt50 {
+    padding-top: 50px;
+  }
+  
+  .mt20 {
+    margin-top: 20px;
+  }
